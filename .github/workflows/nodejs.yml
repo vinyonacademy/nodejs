@@ -1,17 +1,17 @@
-name: Node.js
+  name: Node.js
 
-on: [push]
+  on: [push]
 
-jobs:
-  build:
+  jobs:
+    build:
 
-    runs-on: ubuntu-latest
+      runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '12.x'
-        - run: |
-        apt-get update && apt-get install -y --no-install-recommends nodejs
+      steps:
+        - uses: actions/checkout@v3
+        - name: Use Node.js
+          uses: actions/setup-node@v3
+          with:
+            node-version: '12.x'
+          - run: |
+          apt-get update && apt-get install -y --no-install-recommends nodejs
