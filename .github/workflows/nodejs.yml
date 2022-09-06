@@ -3,7 +3,7 @@ name: Node.js
 on: [push]
 
 jobs:
-  nodejs:
+  build:
 
     runs-on: ubuntu-latest
 
