@@ -13,5 +13,5 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '12.x'
-      - run: |
-      apt-get update && apt-get install -y --no-install-recommends nodejs
+        - run: |
+        apt-get update && apt-get install -y --no-install-recommends nodejs
